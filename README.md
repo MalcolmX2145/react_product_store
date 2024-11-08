@@ -14,6 +14,9 @@ The backend is run with the `npm run dev` command.
 ## Database
 I'm using Mongodb. I created and account and called the project "product_store".
 
+![image](https://github.com/user-attachments/assets/ae754740-51c6-4e0d-8a99-7a7c6ecd6e60)
+
+
 In the .env file, there is URI that connects the API program to the Mongodb database. I then edited the string by putting the passord and the database name. And also allow the database to be accessed from anywhere. the db.js file also handles the connection to the database
 
 In Mongodb, instead of using tables, they use collections (because it is a nosql db). The collections are stored in clusters. The data in collections are organized into documents.
