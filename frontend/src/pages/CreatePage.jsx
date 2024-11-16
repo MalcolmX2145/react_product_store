@@ -1,5 +1,6 @@
-import { Box, Button, Container, Heading, Input, VStack, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Input, VStack, useColorModeValue, useToast } from "@chakra-ui/react";
 import { useState } from "react";
+import { useProductStore } from "../../store/product";
 
 const CreatePage = () => {
   // hook for remembering the values when the state changes
@@ -9,9 +10,29 @@ const CreatePage = () => {
     image: "",
   });
 
+  const toast = useToast(); // message notification
+
+  const {createProduct} = useProductStore(); // global states for user input
+
   // function to handle adding a new product when button is pressed
-  const handleAddProduct = () => {
-    console.log(newProduct);
+  const handleAddProduct = async() => {
+    const {success, message} = await createProduct(newProduct);
+    // condition for toast message
+    if (!success) {
+			toast({
+				title: "Error",
+				description: message,
+				status: "error",
+				isClosable: true,
+			});
+		} else {
+			toast({
+				title: "Success",
+				description: message,
+				status: "success",
+				isClosable: true,
+			});
+		}
   }
   return (
     <Container maxH={"container.sm"}>
