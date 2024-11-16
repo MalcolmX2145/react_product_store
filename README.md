@@ -34,6 +34,10 @@ The API is handled by the controllers folder. The product.controller.js file con
 
 For the routes, the products.route.js under the routes folder handles the routes using the API logic from the controllers folder.
 
+## Frontend
+
+
+
 
 
 
