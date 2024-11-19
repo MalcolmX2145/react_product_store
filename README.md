@@ -35,6 +35,24 @@ The API is handled by the controllers folder. The product.controller.js file con
 For the routes, the products.route.js under the routes folder handles the routes using the API logic from the controllers folder.
 
 ## Frontend
+I have used chakra ui. It has React UI library that has building blocks that i have used here to bulid the components and the pages.
+
+I have also used react-icons for some icons.
+
+I also used a custom hook for remembering the values when the state changes.
+
+In the store folder, the product.js file has a custom hook for storing global states that we can use in the application and update the data in the db
+
+![image](https://github.com/user-attachments/assets/7b8e2c30-ec8c-426c-898f-2363cfe992cc)
+
+The point here is to have a global state so that instead of putting all the states in the root component, we have a global state "store" where the components can retreive the states whih makes the rendering much quicker.
+
+![image](https://github.com/user-attachments/assets/1ad23b1d-8cd8-4c11-bacd-d2f6c85a8c9a)
+
+I have used a package called zustand to help manage this.
+
+![image](https://github.com/user-attachments/assets/961f9d24-3e22-45ab-af46-0985d8f42160)
+
 
 
 
