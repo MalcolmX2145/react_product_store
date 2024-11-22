@@ -33,6 +33,7 @@ const CreatePage = () => {
 				isClosable: true,
 			});
 		}
+    setNewProduct({name: "", price: "", image: ""}); // reset the UI after a product has been updated.
   }
   return (
     <Container maxH={"container.sm"}>
