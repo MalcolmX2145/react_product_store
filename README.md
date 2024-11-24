@@ -53,6 +53,18 @@ I have used a package called zustand to help manage this.
 
 ![image](https://github.com/user-attachments/assets/961f9d24-3e22-45ab-af46-0985d8f42160)
 
+### Create page
+
+![image](https://github.com/user-attachments/assets/77e318f4-9620-4b7a-ad28-0401419f53e5)
+
+This is where the products are created
+
+### Home Page
+
+![image](https://github.com/user-attachments/assets/4af2dac2-2e84-4d18-9a57-1e07cce3761f)
+
+This is where the existing products can be viewed, edited(updated), and deleted. I used a component from chakra called modules which did the pop ups for updating the products.
+
 
 
 
